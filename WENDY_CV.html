@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wendy Rizza Calma — Curriculum Vitae</title>
+<meta name="description" content="CV of Wendy Rizza Calma, Frontend Developer and Software Quality Assurance student.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FBF6F3;
+    --panel:#F4EAE6;
+    --ink:#2E2730;
+    --ink-soft:#7A6D73;
+    --rose:#BD7C88;
+    --gold:#B4915F;
+    --line:#E8DAD5;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Inter", system-ui, sans-serif;
+    font-size:16.5px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  ::selection{background:var(--panel); color:var(--ink);}
+  a{color:var(--ink); text-decoration:underline; text-decoration-color:var(--rose); text-underline-offset:3px;}
+  a:focus-visible{outline:2px solid var(--rose); outline-offset:3px;}
+  h1,h2,h3{font-family:"Fraunces", serif; margin:0; font-weight:500; color:var(--ink);}
+
+  .wrap{max-width:600px; margin:0 auto; padding:0 24px;}
+
+  /* header */
+  header{padding:88px 0 56px; text-align:center;}
+  .flourish{width:34px; height:1px; background:var(--rose); margin:0 auto 26px;}
+  header .role{
+    font-size:13.5px; letter-spacing:.04em; color:var(--rose); margin-bottom:16px;
+  }
+  header h1{font-size:clamp(34px,7vw,46px); font-style:italic; font-weight:500;}
+  header .tagline{
+    margin-top:16px; color:var(--ink-soft); font-size:15.5px; max-width:38ch;
+    margin-left:auto; margin-right:auto;
+  }
+  .contact-line{
+    margin-top:28px; display:flex; flex-wrap:wrap; justify-content:center; gap:6px 18px;
+    font-size:13.5px; color:var(--ink-soft);
+  }
+  .contact-line a{color:var(--ink-soft);}
+
+  section{padding:44px 0; border-top:1px solid var(--line);}
+  section h2{font-size:22px; font-style:italic; margin-bottom:18px;}
+  section p{color:var(--ink-soft); max-width:56ch;}
+
+  /* skills */
+  .pill-row{display:flex; flex-wrap:wrap; gap:8px;}
+  .pill{
+    font-size:13.5px; padding:6px 14px; border-radius:999px;
+    background:var(--panel); color:var(--ink);
+  }
+
+  /* project */
+  .project h3{font-size:17.5px; font-weight:500; font-style:normal;}
+  .project .role{color:var(--rose); font-size:13.5px; margin-top:3px;}
+  .project ul{margin:14px 0 0; padding-left:18px; color:var(--ink-soft); font-size:15px;}
+  .project li{margin-bottom:6px;}
+
+  /* leadership */
+  .role-item{padding:14px 0; border-bottom:1px solid var(--line);}
+  .role-item:last-child{border-bottom:none;}
+  .role-item .top{display:flex; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  .role-item h3{font-size:16px; font-weight:500; font-style:normal;}
+  .role-item .years{font-size:13px; color:var(--ink-soft); white-space:nowrap;}
+  .role-item .org{color:var(--rose); font-size:13.5px; margin-top:2px;}
+
+  /* education */
+  .edu-row{display:flex; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  .edu-row h3{font-size:17px; font-weight:500; font-style:normal;}
+  .edu-row .school{color:var(--rose); font-size:14px; margin-top:3px;}
+  .edu-row .status{font-size:13px; color:var(--ink-soft); text-align:right;}
+
+  /* certifications + achievements as simple lists */
+  .simple-list{list-style:none; margin:0; padding:0;}
+  .simple-list li{
+    display:flex; justify-content:space-between; gap:14px;
+    padding:10px 0; border-bottom:1px solid var(--line); font-size:14.5px;
+  }
+  .simple-list li:last-child{border-bottom:none;}
+  .simple-list .name{color:var(--ink);}
+  .simple-list .issuer{color:var(--ink-soft); font-size:13px; white-space:nowrap;}
+
+  footer{padding:56px 0 90px; text-align:center;}
+  footer h2{font-size:22px; font-style:italic;}
+  footer p{margin:14px auto 0; max-width:40ch; color:var(--ink-soft); font-size:14.5px;}
+  .foot-links{margin-top:22px; display:flex; justify-content:center; gap:20px; font-size:14px;}
+  .foot-note{margin-top:40px; font-size:12px; color:var(--ink-soft);}
+
+  @media (max-width:480px){
+    header{padding:64px 0 44px;}
+    section{padding:36px 0;}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header>
+    <div class="flourish"></div>
+    <div class="role">Frontend Developer &amp; Software QA &amp; DevOps</div>
+    <h1>Wendy Rizza Calma</h1>
+    <p class="tagline">4th year BS Information Technology student, building interfaces in React and making sure they hold up under testing.</p>
+    <div class="contact-line">
+      <span>Pampanga, Philippines</span>
+      <a href="mailto:calma.wendyrizza@gmail.com">calma.wendyrizza@gmail.com</a>
+      <a href="tel:+639494053828">+63 949 405 3828</a>
+      <a href="https://linkedin.com/in/wendy-rizza-calma-bb0128378" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>Detail-oriented BSIT student with hands-on experience in frontend development and software quality assurance. Comfortable building a React interface and writing the test cases that make sure it actually works. Also serves as Vice President of the Junior Philippine Computer Society.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="pill-row">
+      <span class="pill">React.js</span>
+      <span class="pill">JavaScript</span>
+      <span class="pill">HTML &amp; CSS</span>
+      <span class="pill">Bootstrap</span>
+      <span class="pill">Manual Testing</span>
+      <span class="pill">Test Case Design</span>
+      <span class="pill">Bug Documentation</span>
+      <span class="pill">PHP &amp; Laravel</span>
+      <span class="pill">MySQL</span>
+      <span class="pill">Networking</span>
+      <span class="pill">AWS Cloud Fundamentals</span>
+      <span class="pill">Git</span>
+    </div>
+  </section>
+
+  <section id="project">
+    <h2>Project</h2>
+    <div class="project">
+      <h3>FlowSense — 3D Interactive Kiosk &amp; Map Annotation</h3>
+      <div class="role">Frontend Developer &amp; QA Lead</div>
+      <ul>
+        <li>Built responsive interfaces and interactive features using React.js and Bootstrap.</li>
+        <li>Wrote test cases and led functional, usability, and system testing.</li>
+        <li>Tracked defects and validated fixes ahead of release.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="leadership">
+    <h2>Leadership</h2>
+    <div class="role-item">
+      <div class="top"><h3>Vice President</h3><span class="years">2026 – 2027</span></div>
+      <div class="org">Junior Philippine Computer Society</div>
+    </div>
+    <div class="role-item">
+      <div class="top"><h3>President</h3><span class="years">2025 – 2026</span></div>
+      <div class="org">Junior Philippine Computer Society</div>
+    </div>
+    <div class="role-item">
+      <div class="top"><h3>Associate Editor</h3><span class="years">2024 – 2025</span></div>
+      <div class="org">Data Link</div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="edu-row">
+      <div>
+        <h3>BS Information Technology</h3>
+        <div class="school">Consistent Dean Lister and Academic Scholar</div>
+        <div class="school">Angeles University Foundation</div>
+      </div>
+      <div class="status">2023 – 2027<br>4th year student</div>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul class="simple-list">
+      <li><span class="name">Junior Cybersecurity Analyst Career Path</span><span class="issuer">Cisco Networking Academy</span></li>
+      <li><span class="name">CCST Cybersecurity</span><span class="issuer">Cisco</span></li>
+      <li><span class="name">AWS Academy Cloud Foundations</span><span class="issuer">AWS</span></li>
+      <li><span class="name">CCNA: Enterprise Networking, Security &amp; Automation</span><span class="issuer">Cisco</span></li>
+      <li><span class="name">CCNA: Switching, Routing &amp; Wireless Essentials</span><span class="issuer">Cisco</span></li>
+      <li><span class="name">CCNA: Introduction to Networks</span><span class="issuer">Cisco</span></li>
+    </ul>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <ul class="simple-list">
+      <li><span class="name">1st Runner-Up</span><span class="issuer">Hacktober Hackathon 2025</span></li>
+      <li><span class="name">2nd Runner-Up</span><span class="issuer">MSD Frontend Competition 2025</span></li>
+    </ul>
+  </section>
+
+  <footer>
+    <div class="flourish"></div>
+    <h2>Let's work together</h2>
+    <p>Open to frontend development or QA roles where I can put React and testing discipline to work.</p>
+    <div class="foot-links">
+      <a href="mailto:calma.wendyrizza@gmail.com">Email</a>
+      <a href="tel:+639494053828">Call</a>
+      <a href="https://linkedin.com/in/wendy-rizza-calma-bb0128378" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <div class="foot-note">Wendy Rizza Calma · Student No. 23-1730-128</div>
+  </footer>
+
+</div>
+</body>
+</html>
